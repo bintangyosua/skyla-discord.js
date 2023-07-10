@@ -13,6 +13,7 @@ module.exports = {
     const option = interaction.options.getString("name");
     const data = response.data.data;
     let weapon = {};
+
     data.forEach((x) => {
       if (option.toLowerCase() === x.displayName.toLowerCase()) {
         weapon = x;
