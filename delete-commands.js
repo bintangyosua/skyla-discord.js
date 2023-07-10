@@ -2,7 +2,7 @@ const { REST, Routes } = require("discord.js");
 const { clientId } = require("./config.json");
 require("dotenv").config();
 
-const rest = new REST().setToken(token);
+const rest = new REST().setToken(process.env.DISCORD_BOT_TOKEN || "");
 
 // ...
 
