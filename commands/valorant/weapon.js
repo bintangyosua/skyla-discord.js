@@ -20,7 +20,6 @@ module.exports = {
     });
 
     console.log(weapon.weaponStats);
-
     const embed = {
       color: 0xff4f6f,
       author: {
