@@ -18,7 +18,7 @@ for (const folder of commandFolders) {
   const commandFiles = fs
     .readdirSync(commandsPath)
     .filter((file) => file.endsWith(".js"));
-  let categories = commandsPath.split("\\");
+  let categories = commandsPath.split("/");
   categories = categories[categories.length - 1];
   for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
