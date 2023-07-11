@@ -5,6 +5,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("valo-weapon")
     .setDescription("View Valorant Weapon stats")
+    .setNSFW(true)
     .addStringOption((option) =>
       option.setName("name").setDescription("Weapon name").setRequired(true)
     ),
@@ -20,7 +21,6 @@ module.exports = {
       }
     });
 
-    console.log(weapon.weaponStats);
     const embed = {
       color: 0xff4f6f,
       author: {

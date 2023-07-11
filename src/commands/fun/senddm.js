@@ -4,6 +4,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("senddm")
     .setDescription("Send DM to a specified user")
+    .setNSFW(true)
     .addUserOption((option) =>
       option
         .setName("userid")
@@ -29,11 +30,6 @@ module.exports = {
         content: "Message sent successfully",
         ephemeral: true,
       });
-
-      //   const dmHistory = await dmChannel.messages.fetch();
-      //   dmHistory.forEach((dmMessage) => {
-      //     console.log(`${dmMessage.author.tag}: ${dmMessage.content}`);
-      //   });
     } catch (error) {
       console.error(`Failed to send DM to user ${user.username}`, error);
       ("");

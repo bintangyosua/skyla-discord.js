@@ -37,7 +37,6 @@ module.exports = {
 
     // Mengambil nama-nama peran yang dimiliki pengguna
     let roleNames = roles.cache.map((role) => role.name);
-    console.log(roleNames);
     roleNames = roleNames.join(", ");
 
     const readableJoinedDate = date2.toLocaleString("en-US", options2);
